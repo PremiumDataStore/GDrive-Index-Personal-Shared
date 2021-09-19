@@ -2,8 +2,7 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://www.npmjs.com/package/@googledrive/index)
 
-
-## Full White label and Customizable Index | One of a kind
+## Full White Label & Customizable Index | One of a kind
 
 * Supports Both My and Team/Shared Drives with Dark Mode.
 * Click https://bdi-generator.hashhackers.com to make yours or watch https://youtu.be/Ihk4Gm3DPvg.
@@ -261,7 +260,7 @@ const uiConfig = {
 
 ## Disclaimer
 
-* This project is not associated with Google, this project uses Google Drive API to Index Files and Folders.
+* This project is not associated with Google, this project uses Google Drive API to Index Files & Folders.
 * These Index's are written by someone else, possibly by donva and [maple3142](https://github.com/maple3142/GDIndex).
 * Beta Version is redesigned using Bootstrap from Alpha Version by [Parveen Bhadoo](https://twitter.com/ParveenBhadoo).
 * This Repo was imported from [yanzai](https://github.com/yanzai/goindex) and then modified for personal use.
