@@ -251,13 +251,6 @@ const uiConfig = {
 
 * List of Few [Indexes](https://github.com/alx-xlx/goindex)
 
-## Credits
-
-* Source: [maple3142](https://github.com/maple3142/GDIndex)
-* Source: [yanzai](https://github.com/yanzai/goindex)
-* New Design: [Bootstrap](https://getbootstrap.com)
-* Cloud flare: Workers
-
 ## Disclaimer
 
 * This project is not associated with Google, this project uses Google Drive API to Index Files & Folders.
