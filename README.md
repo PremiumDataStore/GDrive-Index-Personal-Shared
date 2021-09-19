@@ -1,4 +1,4 @@
-# Google Personal/Shared Drive Index
+# Google Personal & Shared Drive Index
 
 [![Year](https://data.jsdelivr.com/v1/package/npm/@googledrive/index/badge/rank)](https://www.jsdelivr.com/package/npm/@googledrive/index)
 [![Year](https://data.jsdelivr.com/v1/package/npm/@googledrive/index/badge/year)](https://www.jsdelivr.com/package/npm/@googledrive/index)
