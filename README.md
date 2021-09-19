@@ -4,7 +4,7 @@
 
 ## Full White Label & Customizable Index | One of a kind
 
-* Supports Both My and Team/Shared Drives with Dark Mode.
+* Supports Both My & Team/Shared Drives with Dark Mode.
 * Click https://bdi-generator.hashhackers.com to make yours or watch https://youtu.be/Ihk4Gm3DPvg.
 
 ## Read Wiki of Index before asking How to Do What...
@@ -22,22 +22,22 @@
 * Stable Release `2.0.23`
 * Beta Version (Latest) - [bdi-generator](https://bdi-generator.hashhackers.com) (For Dark Theme use darkly)
 * If you want to deploy main drive leave the option ROOT as it is.
-* If you want to deploy your Team Drive/Shared Drive/Folder then copy the ID and replace it with ROOT.
+* If you want to deploy your Team Drive/Shared Drive/Folder then copy the ID & replace it with ROOT.
 * Eg. if you open this shared drive `https://drive.google.com/drive/u/0/folders/0AOM2i7MQiuWIUk9PVA` - `0AOM2i7MQiuWIUk9PVA` is its ID.
-* Authenticate and copy the code from Google and paste it into Authorization Code Box.
-* Click on Get Code to Generate Code and Copy it for later use.
-* Now Create Cloud flare account and verify email or login with existing account.
-* Find Workers and Open it.
+* Authenticate & copy the code from Google & paste it into Authorization Code Box.
+* Click on Get Code to Generate Code & Copy it for later use.
+* Now Create Cloud flare account & verify email or login with existing account.
+* Find Workers & Open it.
 * Create your sub-domain or continue if already done.
 * Select the Free Plan.
 * Click on Create a Worker.
 * You can rename the workers at top of the page.
 * Now paste the code you copied before.
-* Click on Save and Deploy.
+* Click on Save & Deploy.
 * Done. (May take time for some users due to new account or cache issues)
 * [Watch Video](https://youtu.be/Ihk4Gm3DPvg)
 
-## Basic Config
+## Basic ID Config
 
 ````
     "roots":[
@@ -77,15 +77,15 @@
 * set `"service_account": false` to `"service_account": true`
 * Replace {} with data from service account `file.json`
 
-## Multiple Users Password
+## User & Password
 
-* For single user
+* For Single User
 
 ````
             // "auth": {"username":"password"} /** remove double slash at starting of this line to use password. */
 ````
 
-* For multiple users (unlimited users)
+* For Multiple Users (unlimited users)
 
 ````
       {
@@ -103,7 +103,7 @@
 
 * This is directory encryption added by the original author.
 * Add a .password file your required password in your folder which you want to protect, each folder should have its own .password file.
-* The password is stored inside the Google Drive Folder, not the index and the .password file is hidden an cannot be accessed using Index.
+* The password is stored inside the Google Drive Folder, not the index & the .password file is hidden an cannot be accessed using Index.
 * Example use https://bit.ly/3tBxXJN and password is `thispassword`
 
 ## Brand Customization
@@ -171,23 +171,23 @@ const uiConfig = {
 ## Second Domain Systems
 
 * set second_domain_for_dl to `true` first.
-* set downloaddomain to ur new index you're going to make below.
+* set download domain to your new index you're going to make below.
 * then make separate index on different cloudflare account with worker-beta-second-domain.js code.
-* change only refresh_token or SA and Drive IDs, don't touch anything else.
+* change only refresh_token or SA & Drive IDs, don't touch anything else.
 * It's done.
 
 ## arc.io Integration
 
 * arc.io is embedded in code to support gdi.js.org
 * if you have approved arc.io account, use your code.
-* incase you don't have arc account and want to support us, please keep our arc.io code in your index.
-* if anyone doesn't want to support us and want to remove arc, remove L140 line from the workers code.
+* incase you don't have arc account & want to support us, please keep our arc.io code in your index.
+* if anyone doesn't want to support us & want to remove arc, remove L140 line from the workers code.
 
 ## Themes
 
 * There are 25 Themes from [bootswatch](https://github.com/thomaspark/bootswatch) official [Bootstrap](https://getbootstrap.com) Themes.
 * You can check Theme from [bootswatch.com](https://bootswatch.com) before selecting.
-* To Change theme, first generate the code, paste in Cloud flare Workers and then select one theme code from below and paste it in line 61 of worker script.
+* To Change theme, first generate the code, paste in Cloud flare Workers & then select one theme code from below & paste it in line 61 of worker script.
 
 | Themes    |         |         |         |        |          |
 |-----------|---------|---------|---------|--------|----------|
@@ -197,7 +197,7 @@ const uiConfig = {
 | superhero | united  | yeti    | vapor   | morph  | quartz   |    
 | zephyr    |
 
-## Audio and Video
+## Audio & Video
 
 * Poster for Video is added as default.
 * Fetch Video Poster from Google Drive, uses default if none available.
@@ -214,7 +214,7 @@ const uiConfig = {
 * use `params.orderBy = 'folder,modifiedTime desc,name';` to sort by Modified Time.
 * A comma-separated list of sort keys. Valid keys are 'createdTime', 'folder', 'modifiedByMeTime', 'modifiedTime', 'name', 'name_natural', 'quotaBytesUsed', 'recency', 'sharedWithMeTime', 'starred', and 'viewedByMeTime'. Each key sorts ascending by default, but may be reversed with the 'desc' modifier. Example usage: ?orderBy=folder,modifiedTime desc,name. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.
 
-## Making your own repo, editing and making changes
+## Making your own repo, editing & making changes
 
 * Fork this Repo or Import.
 * Make your changes in `app.js` and `workers-beta.js` files.
@@ -222,7 +222,7 @@ const uiConfig = {
 * Change jsDelivr CDN URL and version code in `workers-beta.js`.
 * Deploy in Cloud flare Workers.
 
-## Get Google_Client_ID and Secret and Generate Token
+## Get Google_Client_ID & Secret & Generate Token
 
 * Open [Google Dev Credentials Site](https://console.developers.google.com/apis/credentials).
 * Create a Project, name as you like.
@@ -232,16 +232,16 @@ const uiConfig = {
 * Select External.
 * Fill your APP Details
 * Select Scope as `https://www.googleapis.com/auth/drive` (wait few hours if Google Drive is not showing up if you've just enabled the scope) or
-* You can also enter manual scope `https://www.googleapis.com/auth/drive` and click on add to table and then save or update.
-* Proceed with Save and Continue.
+* You can also enter manual scope `https://www.googleapis.com/auth/drive` and click on add to table & then save or update.
+* Proceed with Save & Continue.
 * Add your email id you want to use as test user, up to 100 emails maximum. (Because you are not verified)
 * In [Credentials Page](https://console.developers.google.com/apis/credentials) Click `Create Credentials` and then Click `OAuth Client ID`.
 * Select Desktop App.
-* Now you have your own CLIENT ID and CLIENT SECRET.
-* Copy your details and save for future use.
+* Now you have your own CLIENT ID & CLIENT SECRET.
+* Copy your details & save for future use.
 * Copy worker-generator.js code.
-* Replace Line 20 and 21 with your own CLIENT ID and CLIENT SECRET.
-* Paste this code in Cloud flare Workers and follow the site.
+* Replace Line 20 & 21 with your own CLIENT ID & CLIENT SECRET.
+* Paste this code in Cloud flare Workers & follow the site.
 
 ## Upcoming Changes
 
